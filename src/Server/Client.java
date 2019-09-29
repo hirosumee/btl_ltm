@@ -94,6 +94,9 @@ public class Client {
 	}
 
 	public void close() throws IOException {
+		for(Room r : rooms) {
+			r.leave(this);
+		}
 		this.socket.close();
 	}
 

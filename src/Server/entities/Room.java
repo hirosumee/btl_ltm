@@ -29,6 +29,9 @@ public class Room {
 		this.clients.add(client);
 		client.addRoom(this);
 	}
+	public void leave(Client client) {
+		this.clients.remove(client);
+	}
 	//get and set
 	public String getName() {
 		return name;
