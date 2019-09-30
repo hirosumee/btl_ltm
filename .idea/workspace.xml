@@ -1,56 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hirosume.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mistory.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mistory/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mistory/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mistory/utils/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/RegisterPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/DTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/FileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/JointDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/MessageFileDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/MessageTextDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/RoomDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/dtos/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/dtos/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/exceptions/RecordNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/utils/Common.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/vendor/DbConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mistory.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/packets/LoginFailedPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/LoginSuccessfulPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RegisterFailedPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RegisterSuccessfulPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/UnAuthPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/middlewares/MustAuthMiddleware.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/javax.websocket-api-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Client.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/entities/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/exceptions/ReadPacketException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/exceptions/ReadPacketException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Handleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Handleable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Middleware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Middleware.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Packet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Server/packets/LoginPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/LoginPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/Mistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Mistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/daos/UserDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/handlers/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/vendor/DbConnection.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/entities/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/entities/ClientThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/Mistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/Mistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +69,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Mistory">
+  <component name="RunManager" selected="Application.ClientTest">
+    <configuration name="ChatServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.ChatServer" />
+      <module name="mistory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.ClientTest" />
       <module name="mistory" />
@@ -119,19 +102,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="server.vendor.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Mistory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.Mistory" />
-      <module name="mistory" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="server.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,16 +145,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Mistory" />
+      <item itemvalue="Application.ChatServer" />
       <item itemvalue="Application.DbConnection" />
-      <item itemvalue="Docker.Dockerfile" />
       <item itemvalue="Application.UserDAO" />
       <item itemvalue="Application.ClientTest" />
+      <item itemvalue="Docker.Dockerfile" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ClientTest" />
-        <item itemvalue="Application.Mistory" />
+        <item itemvalue="Application.ChatServer" />
         <item itemvalue="Application.UserDAO" />
         <item itemvalue="Application.DbConnection" />
         <item itemvalue="Docker.Dockerfile" />
@@ -229,8 +199,17 @@
       <workItem from="1569766042138" duration="654000" />
       <workItem from="1569803178706" duration="1497000" />
       <workItem from="1569804726418" duration="3512000" />
-      <workItem from="1569811454513" duration="8657000" />
+      <workItem from="1569811454513" duration="8906000" />
+      <workItem from="1569852179766" duration="3643000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1569820462923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1569820462923</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,22 +228,16 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/server/daos/UserDTO.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="Common.MD5(&quot;1234&quot;)" language="JAVA" />
         <watch expression="hash.equals(password)" language="JAVA" />
         <watch expression="hash.length()" language="JAVA" />
-        <watch expression="password.length()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

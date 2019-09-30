@@ -26,8 +26,8 @@ import java.util.logging.Logger;
 public class Server extends ServerSocket {
 
     private Map<String, Room> rooms = new HashMap<>();
-    private Map handlers = new HashMap<String, Handleable>();
-    private Set middlewares = new HashSet<Middleware>();
+    private Map<String, Handleable> handlers = new HashMap<>();
+    private Set<Middleware> middlewares = new HashSet<>();
     private Set<String> excludeMiddlewaresCheck = new HashSet<>();
 
     public Server() throws IOException {
@@ -68,32 +68,38 @@ public class Server extends ServerSocket {
         this.excludeMiddlewaresCheck.remove(packageType);
     }
 
-    public boolean hasExclude(String packetType) {
+    public synchronized boolean hasExclude(String packetType) {
         return this.excludeMiddlewaresCheck.contains(packetType);
     }
     //get and set
 
-    public Map<String, Room> getRooms() {
+    public synchronized Map<String, Room> getRooms() {
         return rooms;
     }
 
-    public boolean addRoom(Room room) {
+    public synchronized Room addRoom(String name) {
+        if (this.rooms.containsKey(name)) return this.rooms.get(name);
+        Room room = new Room(name);
+        this.rooms.put(name, room);
+        return room;
+    }
+    public synchronized boolean addRoom(Room room) {
         if (this.rooms.containsKey(room.getName())) return false;
         this.rooms.put(room.getName(), room);
         return true;
     }
-    public Room removeRoom(String name) {
+    public synchronized Room removeRoom(String name) {
         return this.rooms.remove(name);
     }
-    public Room removeRoom(Room room) {
+    public synchronized Room removeRoom(Room room) {
         return this.rooms.remove(room.getName());
     }
 
-    public Map<String, Handleable> getHandlers() {
+    public synchronized Map<String, Handleable>  getHandlers() {
         return handlers;
     }
 
-    public Set<Middleware> getMiddlewares() {
+    public synchronized Set<Middleware> getMiddlewares() {
         return middlewares;
     }
 

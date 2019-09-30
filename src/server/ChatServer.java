@@ -9,19 +9,23 @@ import mistory.Server;
 import java.io.IOException;
 import server.handlers.LoginHandler;
 import server.handlers.RegisterHandler;
+import server.middlewares.MustAuthMiddleware;
 
 /**
  *
  * @author hirosume
  */
-public class Mistory {
+public class ChatServer {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
-        Server server = new Server(3000);
+        mistory.Server server = new mistory.Server(3000);
+//        server.registerMiddlewareExclude("login");
+//        server.registerMiddlewareExclude("register");
+        server.registerMiddleware(new MustAuthMiddleware());
 		server.registerHandler("login", new LoginHandler());
 		server.registerHandler("register", new RegisterHandler());
 		server.listen();

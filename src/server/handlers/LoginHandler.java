@@ -9,7 +9,9 @@ import mistory.Client;
 import mistory.Server;
 import mistory.interfaces.Handleable;
 import mistory.interfaces.Packet;
+import packets.LoginFailedPacket;
 import packets.LoginPacket;
+import packets.LoginSuccessfulPacket;
 import server.daos.UserDTO;
 import server.dtos.UserDAO;
 import server.exceptions.RecordNotFoundException;
@@ -31,9 +33,11 @@ public class LoginHandler implements Handleable {
                 return;
             }
             client.setUser(userDTO);
+            client.send(new LoginSuccessfulPacket());
             System.out.println(isValid);
         } catch (RecordNotFoundException e) {
             System.out.println("user not found");
+            client.send(new LoginFailedPacket("Tài khoản hoặc mật khẩu sai"));
         }
     }
 

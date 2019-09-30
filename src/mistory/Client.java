@@ -44,16 +44,10 @@ public class Client {
         this.server = server;
         in = new ObjectInputStream(socket.getInputStream());
         out = new ObjectOutputStream(socket.getOutputStream());
-        createSelfRoom();
     }
 
-    private void createSelfRoom() {
-        Room room = new Room(id);
-        this.server.addRoom(room);
-        this.rooms.add(room);
-    }
 
-    public void listen() throws IOException, ReadPacketException {
+    public void listen() throws ReadPacketException {
 
         while (!socket.isClosed()) {
             try {
@@ -108,7 +102,6 @@ public class Client {
         for (Room r : rooms) {
             r.leave(this);
         }
-        this.server.removeRoom(id);
         this.socket.close();
     }
 
