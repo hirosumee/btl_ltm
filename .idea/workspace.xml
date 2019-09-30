@@ -1,22 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9588d2af-b7a2-4f22-a752-8fbbb318ebb0" name="Default Changelist" comment="" />
+    <list default="true" id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/hirosume.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mssql_jdbc_7_4_1_jre8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mistory.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mistory/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mistory/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mistory/utils/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RegisterPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/DTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/FileDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/JointDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/MessageFileDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/MessageTextDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/RoomDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/daos/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/dtos/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/dtos/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/exceptions/RecordNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/utils/Common.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/vendor/DbConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mistory.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.xml" beforeDir="false" afterPath="$PROJECT_DIR$/build.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/javax.websocket-api-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/build-impl.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/build-impl.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/entities/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/entities/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/exceptions/ReadPacketException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/exceptions/ReadPacketException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Handleable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Handleable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Middleware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Middleware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/Packet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/Packet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/interfaces/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/interfaces/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Server/packets/LoginPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/LoginPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/Mistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/Mistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/daos/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/handlers/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mistory/vendor/DbConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/ClientTest.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1RVZNkP2pLMq2cYwgTlP0Sgx4T9" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RVxPZYqNRAlWKCRTH8sOEXlLeB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mssql-jdbc-7.4.1.jre8.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Server" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -31,21 +99,173 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.Mistory">
+    <configuration name="ClientTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.ClientTest" />
+      <module name="mistory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DbConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.vendor.DbConnection" />
+      <module name="mistory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.vendor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mistory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.Mistory" />
+      <module name="mistory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.dtos.UserDAO" />
+      <module name="mistory" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.dtos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="buildCliOptions" value="" />
+          <option name="command" value="" />
+          <option name="containerName" value="" />
+          <option name="entrypoint" value="" />
+          <option name="imageTag" value="" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="1433" />
+                <option name="hostPort" value="1433" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Mistory" />
+      <item itemvalue="Application.DbConnection" />
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="Application.UserDAO" />
+      <item itemvalue="Application.ClientTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ClientTest" />
+        <item itemvalue="Application.Mistory" />
+        <item itemvalue="Application.UserDAO" />
+        <item itemvalue="Application.DbConnection" />
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@58475906" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@58475906" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@2cef0647" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@58475906" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@1aa02176" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9588d2af-b7a2-4f22-a752-8fbbb318ebb0" name="Default Changelist" comment="" />
-      <created>1569754185783</created>
+      <changelist id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="" />
+      <created>1569766040864</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569754185783</updated>
-      <workItem from="1569754187226" duration="193000" />
+      <updated>1569766040864</updated>
+      <workItem from="1569766042138" duration="654000" />
+      <workItem from="1569803178706" duration="1497000" />
+      <workItem from="1569804726418" duration="3512000" />
+      <workItem from="1569811454513" duration="8657000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/server/daos/UserDTO.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="Common.MD5(&quot;1234&quot;)" language="JAVA" />
+        <watch expression="hash.equals(password)" language="JAVA" />
+        <watch expression="hash.length()" language="JAVA" />
+        <watch expression="password.length()" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
