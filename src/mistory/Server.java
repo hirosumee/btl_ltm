@@ -7,7 +7,7 @@ package mistory;
 
 import mistory.entities.ClientThread;
 import mistory.entities.Room;
-import mistory.interfaces.Handleable;
+import mistory.interfaces.ServerHandleable;
 import mistory.interfaces.Middleware;
 
 import java.io.IOException;
@@ -26,7 +26,7 @@ import java.util.logging.Logger;
 public class Server extends ServerSocket {
 
     private Map<String, Room> rooms = new HashMap<>();
-    private Map<String, Handleable> handlers = new HashMap<>();
+    private Map<String, ServerHandleable> handlers = new HashMap<>();
     private Set<Middleware> middlewares = new HashSet<>();
     private Set<String> excludeMiddlewaresCheck = new HashSet<>();
 
@@ -52,7 +52,7 @@ public class Server extends ServerSocket {
         }
     }
 
-    public void registerHandler(String name, Handleable handler) {
+    public void registerHandler(String name, ServerHandleable handler) {
         this.handlers.put(name, handler);
     }
 
@@ -95,7 +95,7 @@ public class Server extends ServerSocket {
         return this.rooms.remove(room.getName());
     }
 
-    public synchronized Map<String, Handleable>  getHandlers() {
+    public synchronized Map<String, ServerHandleable>  getHandlers() {
         return handlers;
     }
 

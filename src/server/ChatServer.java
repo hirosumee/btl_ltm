@@ -7,8 +7,10 @@ package server;
 
 import mistory.Server;
 import java.io.IOException;
-import server.handlers.LoginHandler;
-import server.handlers.RegisterHandler;
+
+import packets.LoginPacket;
+import packets.RegisterPacket;
+import server.handlers.*;
 import server.middlewares.MustAuthMiddleware;
 
 /**
@@ -21,13 +23,19 @@ public class ChatServer {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        // TODO code application logic here
         mistory.Server server = new mistory.Server(3000);
-//        server.registerMiddlewareExclude("login");
-//        server.registerMiddlewareExclude("register");
+        server.registerMiddlewareExclude(LoginPacket.type);
+        server.registerMiddlewareExclude(LoginPacket.type);
         server.registerMiddleware(new MustAuthMiddleware());
-		server.registerHandler("login", new LoginHandler());
-		server.registerHandler("register", new RegisterHandler());
+		server.registerHandler(LoginPacket.type, new LoginHandler());
+		server.registerHandler(RegisterPacket.type, new RegisterHandler());
+		server.registerHandler("room.list", new RoomListHandler());
+		server.registerHandler("room.info", new RoomInfoHandler());
+		server.registerHandler("room.create", new RoomCreateHandler());
+		server.registerHandler("message.new", new MessageNewHandler());
+		server.registerHandler("message.list", new MessageListHandler());
+		server.registerHandler("group.invite", new GroupInviteHandler());
+		server.registerHandler("group.kick", new GroupKickHandler());
 		server.listen();
     }
     

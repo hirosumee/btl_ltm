@@ -3,6 +3,7 @@ package packets;
 import mistory.interfaces.Packet;
 
 public class RegisterFailedPacket implements Packet {
+    public static String type = "register.failed";
     public String getMessage() {
         return message;
     }
@@ -21,6 +22,6 @@ public class RegisterFailedPacket implements Packet {
     private String message = "";
     @Override
     public String getType() {
-        return "regiser.failed";
+        return type;
     }
 }

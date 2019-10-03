@@ -1,6 +1,6 @@
 package server.middlewares;
 
-import mistory.Client;
+import mistory.entities.Client;
 import mistory.Server;
 import mistory.interfaces.Middleware;
 import mistory.interfaces.Packet;

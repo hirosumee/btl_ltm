@@ -3,7 +3,7 @@ package packets;
 import mistory.interfaces.Packet;
 
 public class LoginFailedPacket implements Packet {
-    private final String type = "login.failed";
+    public static final String type = "login.failed";
     private String message = "";
 
     public LoginFailedPacket(String message) {

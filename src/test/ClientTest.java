@@ -5,13 +5,13 @@
  */
 package test;
 
+import mistory.Driver.Client;
+import mistory.interfaces.Packet;
+import packets.LoginFailedPacket;
 import packets.LoginPacket;
-import packets.RegisterPacket;
+import packets.LoginSuccessfulPacket;
 
 import java.io.IOException;
-import java.io.ObjectOutputStream;
-import java.net.InetAddress;
-import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,13 +22,18 @@ import java.util.logging.Logger;
 public class ClientTest {
 	public static void main(String[] args) throws InterruptedException {
 		try {
-			Socket socket = new Socket(InetAddress.getLocalHost(), 3000);
-			ObjectOutputStream oos = new ObjectOutputStream(socket.getOutputStream());
-//			oos.writeBytes("abc");
-			oos.writeObject(new LoginPacket("hirosume1", "1234"));
-			oos.flush();
-			Thread.sleep(5000);
-//			socket.close();
+			Packet packet = new LoginPacket("hirosume12", "1234");
+			Client client = new Client();
+			client.send(packet);
+			client.addListener(LoginSuccessfulPacket.type, pk -> {
+			    LoginSuccessfulPacket pk1 = (LoginSuccessfulPacket) pk;
+				System.out.println(pk1.getUsername());
+			});
+			client.addListener(LoginFailedPacket.type, pk -> {
+				System.out.println(((LoginFailedPacket) pk).getMessage());
+			});
+			Thread.sleep(1000);
+			client.close();
 		} catch (IOException ex) {
 			Logger.getLogger(ClientTest.class.getName()).log(Level.SEVERE, null, ex);
 		}

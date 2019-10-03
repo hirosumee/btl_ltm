@@ -1,8 +1,8 @@
 package server.handlers;
 
-import mistory.Client;
+import mistory.entities.Client;
 import mistory.Server;
-import mistory.interfaces.Handleable;
+import mistory.interfaces.ServerHandleable;
 import mistory.interfaces.Packet;
 import packets.RegisterFailedPacket;
 import packets.RegisterPacket;
@@ -13,7 +13,7 @@ import server.exceptions.RecordNotFoundException;
 
 import java.security.NoSuchAlgorithmException;
 
-public class RegisterHandler implements Handleable {
+public class RegisterHandler implements ServerHandleable {
     @Override
     public void execute(Client client, Server server) {
         Packet packet = client.getPacket();

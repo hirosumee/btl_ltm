@@ -5,9 +5,9 @@
  */
 package server.handlers;
 
-import mistory.Client;
+import mistory.entities.Client;
 import mistory.Server;
-import mistory.interfaces.Handleable;
+import mistory.interfaces.ServerHandleable;
 import mistory.interfaces.Packet;
 import packets.LoginFailedPacket;
 import packets.LoginPacket;
@@ -19,7 +19,7 @@ import server.exceptions.RecordNotFoundException;
 /**
  * @author hirosume
  */
-public class LoginHandler implements Handleable {
+public class LoginHandler implements ServerHandleable {
 
     @Override
     public void execute(Client client, Server server) {
@@ -30,14 +30,15 @@ public class LoginHandler implements Handleable {
             boolean isValid = userDTO.comparePassword(loginPacket.getPassword());
             if(!isValid) {
                 System.out.println("Login failed");
+                client.send(new LoginFailedPacket("Mật khẩu sai"));
                 return;
             }
             client.setUser(userDTO);
-            client.send(new LoginSuccessfulPacket());
+            client.send(new LoginSuccessfulPacket(userDTO.getUsername()));
             System.out.println(isValid);
         } catch (RecordNotFoundException e) {
             System.out.println("user not found");
-            client.send(new LoginFailedPacket("Tài khoản hoặc mật khẩu sai"));
+            client.send(new LoginFailedPacket("Username không tồn tại"));
         }
     }
 

@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mistory;
+package mistory.entities;
 
-import mistory.entities.Room;
+import mistory.Server;
 import mistory.exceptions.ReadPacketException;
 import mistory.interfaces.Middleware;
 import mistory.interfaces.Packet;

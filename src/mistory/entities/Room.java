@@ -5,7 +5,6 @@
  */
 package mistory.entities;
 
-import mistory.Client;
 import mistory.interfaces.Packet;
 import java.util.ArrayList;
 import java.util.List;

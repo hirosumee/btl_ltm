@@ -5,13 +5,13 @@
  */
 package mistory.interfaces;
 
-import mistory.Client;
+import mistory.entities.Client;
 import mistory.Server;
 
 /**
  *
  * @author hirosume
  */
-public interface Handleable {
+public interface ServerHandleable {
 	void execute(Client client, Server server);
 }

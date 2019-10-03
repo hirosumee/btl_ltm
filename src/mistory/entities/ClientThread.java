@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.net.Socket;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import mistory.Client;
+
 import mistory.Server;
 import mistory.exceptions.ReadPacketException;
 
@@ -19,7 +19,7 @@ import mistory.exceptions.ReadPacketException;
  */
 public class ClientThread extends Thread {
 
-	Client client;
+	private Client client;
 
 	public ClientThread(Socket socket, Server server) {
 		try {
@@ -36,6 +36,7 @@ public class ClientThread extends Thread {
 		} catch (ReadPacketException ex) {
 			try {
 				client.close();
+				this.stop();
 				System.out.println("socket is closed");
 			} catch (IOException ex1) {
 				Logger.getLogger(ClientThread.class.getName()).log(Level.SEVERE, null, ex1);

@@ -5,7 +5,7 @@
  */
 package mistory.interfaces;
 
-import mistory.Client;
+import mistory.entities.Client;
 import mistory.Server;
 
 /**

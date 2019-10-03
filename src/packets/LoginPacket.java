@@ -6,7 +6,6 @@
 package packets;
 
 import mistory.interfaces.Packet;
-import java.io.Serializable;
 
 /**
  *
@@ -14,7 +13,7 @@ import java.io.Serializable;
  */
 public class LoginPacket implements Packet {
 
-	private String type = "login";
+	public static final String type = "login";
 	private String username;
 	private String password;
 
