@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.logging.Level;
@@ -59,6 +60,7 @@ public class Client {
                 this.packet = packet;
                 this.execute();
             } catch (IOException | ClassNotFoundException ex) {
+//                Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
                 throw new ReadPacketException();
             }
         }

@@ -3,6 +3,7 @@ package packets;
 import mistory.interfaces.Packet;
 
 public class LoginFailedPacket implements Packet {
+    static final long serialVersionUID = 1L;
     public static final String type = "login.failed";
     private String message = "";
 

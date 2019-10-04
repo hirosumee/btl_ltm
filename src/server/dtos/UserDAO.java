@@ -22,19 +22,9 @@ public class UserDAO extends DAO {
             preparedStatement.setString(1, user.getUsername());
             preparedStatement.setString(2, user.getPassword());
             int affectedRows = preparedStatement.executeUpdate();
-            if (affectedRows > 0) {
-                // get the ID back
-                try (ResultSet rs = preparedStatement.getGeneratedKeys()) {
-                    if (rs.next()) {
-                        id = rs.getLong(1);
-                    }
-                } catch (SQLException ex) {
-                    System.out.println(ex.getMessage());
-                }
-            }
+            id = this.getCreatedId(affectedRows, preparedStatement);
         } catch (SQLException e) {
             System.out.println(e.getMessage());
-            id = -1;
         }
         return id;
     }
@@ -42,7 +32,7 @@ public class UserDAO extends DAO {
     public UserDTO findByUsername(String username) throws RecordNotFoundException {
         String SQL = this.injectTableName("SELECT TOP 1 * FROM %s WHERE username=?");
         try {
-            System.out.println(username);
+//            System.out.println(username);
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, username);
             ResultSet rs = preparedStatement.executeQuery();

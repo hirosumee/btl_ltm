@@ -35,7 +35,7 @@ public class LoginHandler implements ServerHandleable {
             }
             client.setUser(userDTO);
             client.send(new LoginSuccessfulPacket(userDTO.getUsername()));
-            System.out.println(isValid);
+//            System.out.println(isValid);
         } catch (RecordNotFoundException e) {
             System.out.println("user not found");
             client.send(new LoginFailedPacket("Username không tồn tại"));

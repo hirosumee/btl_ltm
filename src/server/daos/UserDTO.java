@@ -34,7 +34,7 @@ public class UserDTO implements User, DTO {
 
     public static UserDTO fromModel(ResultSet resultSet) throws SQLException, NoSuchAlgorithmException {
         UserDTO dto = new UserDTO();
-        dto.setUsername(resultSet.getString(1));
+        dto.setUsername(resultSet.getString(1).trim());
         dto.password = resultSet.getString(2).trim();
         return dto;
     }

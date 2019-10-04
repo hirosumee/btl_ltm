@@ -12,7 +12,7 @@ import mistory.interfaces.Packet;
  * @author hirosume
  */
 public class LoginPacket implements Packet {
-
+	static final long serialVersionUID = 1L;
 	public static final String type = "login";
 	private String username;
 	private String password;

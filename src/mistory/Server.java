@@ -88,6 +88,9 @@ public class Server extends ServerSocket {
         this.rooms.put(room.getName(), room);
         return true;
     }
+    public synchronized Room getRoom(String name) {
+        return this.rooms.get(name);
+    }
     public synchronized Room removeRoom(String name) {
         return this.rooms.remove(name);
     }

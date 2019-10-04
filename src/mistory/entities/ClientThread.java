@@ -35,9 +35,9 @@ public class ClientThread extends Thread {
 			client.listen();
 		} catch (ReadPacketException ex) {
 			try {
+				System.out.println("socket is closed");
 				client.close();
 				this.stop();
-				System.out.println("socket is closed");
 			} catch (IOException ex1) {
 				Logger.getLogger(ClientThread.class.getName()).log(Level.SEVERE, null, ex1);
 			}

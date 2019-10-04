@@ -8,6 +8,7 @@ import packets.RegisterFailedPacket;
 import packets.RegisterPacket;
 import packets.RegisterSuccessfulPacket;
 import server.daos.UserDTO;
+import server.dtos.RoomDAO;
 import server.dtos.UserDAO;
 import server.exceptions.RecordNotFoundException;
 
@@ -19,6 +20,7 @@ public class RegisterHandler implements ServerHandleable {
         Packet packet = client.getPacket();
         RegisterPacket registerPacket = (RegisterPacket) packet;
         UserDAO userDAO = new UserDAO();
+        RoomDAO roomDAO = new RoomDAO();
         try {
             userDAO.findByUsername(registerPacket.getUsername());
             System.out.println("user is exist");
@@ -27,6 +29,7 @@ public class RegisterHandler implements ServerHandleable {
             try {
                 UserDTO userDTO = new UserDTO(registerPacket.getUsername(), registerPacket.getPassword());
                 userDAO.create(userDTO);
+                roomDAO.createSelfRoom(userDTO.getUsername());
                 System.out.println(userDTO);
                 client.send(new RegisterSuccessfulPacket(registerPacket.getUsername()));
             } catch (NoSuchAlgorithmException ex) {

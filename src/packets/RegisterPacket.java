@@ -3,6 +3,7 @@ package packets;
 import mistory.interfaces.Packet;
 
 public class RegisterPacket implements Packet {
+    static final long serialVersionUID = 1L;
     public static final String type = "register" ;
     private String username;
     private String password;

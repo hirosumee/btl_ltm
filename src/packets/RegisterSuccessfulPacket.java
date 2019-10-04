@@ -3,6 +3,7 @@ package packets;
 import mistory.interfaces.Packet;
 
 public class RegisterSuccessfulPacket implements Packet {
+    static final long serialVersionUID = 1L;
     private String username;
 
     public RegisterSuccessfulPacket(String username) {

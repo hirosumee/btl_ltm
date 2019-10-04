@@ -1,26 +1,29 @@
-package server.daos;
+package packets;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import mistory.interfaces.Packet;
+import server.daos.RoomDTO;
+
 import java.util.Date;
 
-public class RoomDTO {
-    private int id;
-    private String groupIP;
-    private String type;
-    private String creator;
-    private Date time;
-    private Date update_time;
+public class RoomPacket implements Packet {
+    public static final String _type = "room.packet";
+    private static final long serialVersionUID = 1L;
+    public int id;
+    public String groupIP;
+    public String type;
+    public String creator;
+    public Date time;
+    public Date update_time;
 
-    public static RoomDTO fromModel(ResultSet rs) throws SQLException {
-        RoomDTO d = new RoomDTO();
-        d.groupIP = rs.getString(1);
-        d.type = rs.getString(2).trim();
-        d.creator = rs.getString(3).trim();
-        d.time = rs.getDate(4);
-        d.update_time = rs.getDate(5);
-        d.id = rs.getInt(6);
-        return d;
+
+
+    @Override
+    public String getType() {
+        return null;
+    }
+
+    public static long getSerialVersionUID() {
+        return serialVersionUID;
     }
 
     public int getId() {
@@ -37,10 +40,6 @@ public class RoomDTO {
 
     public void setGroupIP(String groupIP) {
         this.groupIP = groupIP;
-    }
-
-    public String getType() {
-        return type;
     }
 
     public void setType(String type) {
