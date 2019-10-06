@@ -7,69 +7,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/mistory_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/mistory/entities/PingPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/MessageLoadPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/MessageLoadSuccessPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/MessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/RoomListPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/RoomListResponsePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/RoomPacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/packets/TextMessagePacket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/daos/MessageDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/dtos/JoinDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/dtos/MessageTextDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/dtos/RoomDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/utils/RoomListUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/utils/RoomUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/GroupCreatePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/GroupInvitePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/GroupInviteSuccessfulPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/GroupKickPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/GroupKickSuccessfulPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RoomCreatePacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RoomCreateSuccessfulPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RoomInfoPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RoomInfoResultPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/UserFindPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/UserFindSuccessPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handlers/UserFindHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/Driver/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/Driver/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/entities/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/entities/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/entities/ClientThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/entities/ClientThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/LoginFailedPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/LoginFailedPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/LoginPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/LoginPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/LoginSuccessfulPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/LoginSuccessfulPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RegisterFailedPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RegisterFailedPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RegisterPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RegisterPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RegisterSuccessfulPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RegisterSuccessfulPacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/UnAuthPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/UnAuthPacket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/ChatServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/JointDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageFileDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageFileDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageTextDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageTextDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/RoomDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/RoomDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/dtos/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/dtos/DAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/dtos/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/dtos/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/DTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/FileDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageFileDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/MessageTextDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/RoomDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/UserDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/dtos/DAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/dtos/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupInviteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupInviteHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupKickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupKickHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/LoginHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/LoginHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageListHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageListHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageNewHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageNewHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/RegisterHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/RegisterHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomCreateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomCreateHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomInfoHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomInfoHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomListHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomListHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/Driver/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/Driver/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/entities/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/entities/ClientThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/LoginFailedPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/LoginFailedPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/LoginPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/LoginPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/LoginSuccessfulPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/LoginSuccessfulPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/RegisterFailedPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RegisterFailedPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/RegisterPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RegisterPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/RegisterSuccessfulPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RegisterSuccessfulPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/UnAuthPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/UnAuthPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/vendor/DbConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/vendor/DbConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packets/RoomListResponsePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RoomListResponsePacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packets/RoomPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RoomPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ChatServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/JointDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/JoinDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/MessageFileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/MessageFileDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/MessageTextDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/MessageTextDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/RoomDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/RoomDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/UserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/dtos/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/DAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/dtos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/DTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/DTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/FileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/FileDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/JoinDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/JoinDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/MessageDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/MessageDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/MessageFileDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/MessageFileDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/MessageTextDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/MessageTextDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/RoomDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/RoomDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dtos/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dtos/JoinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/JoinDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dtos/MessageTextDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/MessageTextDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dtos/RoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/RoomDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/dtos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/GroupInviteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/GroupInviteHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/GroupKickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/GroupKickHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/LoginHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/handlers/MessageListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/MessageListHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/handlers/MessageNewHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/MessageNewHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RegisterHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/RoomCreateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RoomCreateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/RoomInfoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RoomInfoHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/handlers/RoomListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RoomListHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/utils/RoomListUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utils/RoomListUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/utils/RoomUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/utils/RoomUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/vendor/DbConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/vendor/DbConnection.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -87,6 +85,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
   </component>
   <component name="ProjectId" id="1RVxPZYqNRAlWKCRTH8sOEXlLeB" />
   <component name="ProjectLevelVcsManager">
@@ -161,11 +164,11 @@
       </method>
     </configuration>
     <configuration name="UserDAO" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="server.dtos.UserDAO" />
+      <option name="MAIN_CLASS_NAME" value="server.daos.UserDAO" />
       <module name="mistory" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="server.dtos.*" />
+          <option name="PATTERN" value="server.daos.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,7 +260,9 @@
       <workItem from="1570104138923" duration="14027000" />
       <workItem from="1570148336527" duration="613000" />
       <workItem from="1570154574752" duration="3647000" />
-      <workItem from="1570164128612" duration="18924000" />
+      <workItem from="1570164128612" duration="19187000" />
+      <workItem from="1570327043584" duration="4000" />
+      <workItem from="1570354458570" duration="9040000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1569820462923</created>
@@ -280,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570114271938</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update">
+      <created>1570192301253</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570192301253</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

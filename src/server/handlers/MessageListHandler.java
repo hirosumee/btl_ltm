@@ -6,8 +6,8 @@ import mistory.interfaces.ServerHandleable;
 import packets.MessageLoadPacket;
 import packets.MessageLoadSuccessPacket;
 import packets.TextMessagePacket;
-import server.daos.MessageTextDTO;
-import server.dtos.MessageTextDAO;
+import server.dtos.MessageTextDTO;
+import server.daos.MessageTextDAO;
 
 import java.util.ArrayList;
 import java.util.List;

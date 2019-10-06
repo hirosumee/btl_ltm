@@ -1,7 +1,6 @@
 package packets;
 
 import mistory.interfaces.Packet;
-import server.daos.RoomDTO;
 
 import java.util.Date;
 

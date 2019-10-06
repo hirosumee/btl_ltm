@@ -13,7 +13,7 @@ import java.sql.*;
 public class DbConnection {
     private static String
             connectionUrl =
-            "jdbc:sqlserver://localhost:1433;databaseName=master;user=SA;password=P@ssw0rd";
+            "jdbc:sqlserver://localhost:1433;databaseName=new_database;user=SA;password=P@ssw0rd";
 
 
     private static DbConnection instance;

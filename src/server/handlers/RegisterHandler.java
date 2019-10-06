@@ -7,9 +7,9 @@ import mistory.interfaces.Packet;
 import packets.RegisterFailedPacket;
 import packets.RegisterPacket;
 import packets.RegisterSuccessfulPacket;
-import server.daos.UserDTO;
-import server.dtos.RoomDAO;
-import server.dtos.UserDAO;
+import server.dtos.UserDTO;
+import server.daos.RoomDAO;
+import server.daos.UserDAO;
 import server.exceptions.RecordNotFoundException;
 
 import java.security.NoSuchAlgorithmException;

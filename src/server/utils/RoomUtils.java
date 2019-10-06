@@ -1,9 +1,9 @@
 package server.utils;
 
 import packets.RoomPacket;
-import server.daos.JoinDTO;
-import server.daos.RoomDTO;
-import server.dtos.JoinDAO;
+import server.dtos.JoinDTO;
+import server.dtos.RoomDTO;
+import server.daos.JoinDAO;
 
 import java.util.List;
 

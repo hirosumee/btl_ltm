@@ -1,11 +1,9 @@
 package packets;
 
 import mistory.interfaces.Packet;
-import server.daos.RoomDTO;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class RoomListResponsePacket implements Packet {
 

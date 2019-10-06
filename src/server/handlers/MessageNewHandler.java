@@ -5,9 +5,9 @@ import mistory.entities.Client;
 import mistory.entities.Room;
 import mistory.interfaces.ServerHandleable;
 import packets.TextMessagePacket;
-import server.daos.JoinDTO;
-import server.daos.UserDTO;
-import server.dtos.MessageTextDAO;
+import server.dtos.JoinDTO;
+import server.dtos.UserDTO;
+import server.daos.MessageTextDAO;
 import server.utils.RoomUtils;
 
 public class MessageNewHandler implements ServerHandleable {

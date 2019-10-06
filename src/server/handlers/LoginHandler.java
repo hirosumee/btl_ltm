@@ -12,8 +12,8 @@ import mistory.interfaces.Packet;
 import packets.LoginFailedPacket;
 import packets.LoginPacket;
 import packets.LoginSuccessfulPacket;
-import server.daos.UserDTO;
-import server.dtos.UserDAO;
+import server.dtos.UserDTO;
+import server.daos.UserDAO;
 import server.exceptions.RecordNotFoundException;
 
 /**

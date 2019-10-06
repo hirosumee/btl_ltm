@@ -5,11 +5,14 @@
  */
 package server;
 
+import mistory.interfaces.User;
 import packets.*;
 import server.handlers.*;
 import server.middlewares.MustAuthMiddleware;
+import server.vendor.DbConnection;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 /**
  * @author hirosume
@@ -19,7 +22,8 @@ public class ChatServer {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException {
+        DbConnection.getInstance();
         mistory.Server server = new mistory.Server(3000);
         server.registerMiddlewareExclude(LoginPacket.type);
         server.registerMiddlewareExclude(RegisterPacket.type);
@@ -28,11 +32,12 @@ public class ChatServer {
         server.registerHandler(RegisterPacket.type, new RegisterHandler());
         server.registerHandler(RoomListPacket.type, new RoomListHandler());
         server.registerHandler(TextMessagePacket._type, new MessageNewHandler());
-        server.registerHandler("room.info", new RoomInfoHandler());
-        server.registerHandler("room.create", new RoomCreateHandler());
+        server.registerHandler(RoomCreatePacket.type, new RoomCreateHandler());
         server.registerHandler(MessageLoadPacket.type, new MessageListHandler());
-        server.registerHandler("group.invite", new GroupInviteHandler());
-        server.registerHandler("group.kick", new GroupKickHandler());
+        server.registerHandler(RoomInfoPacket.type, new RoomInfoHandler());
+        server.registerHandler(GroupInvitePacket.type, new GroupInviteHandler());
+        server.registerHandler(GroupKickPacket.type, new GroupKickHandler());
+        server.registerHandler(UserFindPacket.type, new UserFindHandler());
         server.listen();
     }
 

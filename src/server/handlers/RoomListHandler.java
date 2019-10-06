@@ -4,9 +4,9 @@ import mistory.entities.Client;
 import mistory.Server;
 import mistory.entities.Room;
 import mistory.interfaces.ServerHandleable;
-import server.daos.RoomDTO;
-import server.daos.UserDTO;
-import server.dtos.RoomDAO;
+import server.dtos.RoomDTO;
+import server.dtos.UserDTO;
+import server.daos.RoomDAO;
 import server.utils.RoomListUtils;
 
 import java.util.List;
