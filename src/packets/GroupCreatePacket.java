@@ -2,23 +2,22 @@ package packets;
 
 import mistory.interfaces.Packet;
 
-import java.util.ArrayList;
 
 public class GroupCreatePacket implements Packet {
     static final long serialVersionUID = 1L;
     public static final String type = "group.create";
-    private ArrayList<String> friends;
+    private String name;
 
-    public GroupCreatePacket(ArrayList<String> friends) {
-        this.friends = friends;
+    public GroupCreatePacket(String name) {
+        this.name = name;
     }
 
-    public GroupCreatePacket() {
-        friends = new ArrayList<>();
+    public String getName() {
+        return name;
     }
 
-    public ArrayList<String> getFriends() {
-        return friends;
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override

@@ -44,11 +44,11 @@ public class UserDAO extends DAO {
         }
     }
     public ArrayList<UserDTO> searchByUsername(String username) {
-        String SQL = this.injectTableName("SELECT * FROM %s WHERE username LIKE %?%");
+        String SQL = this.injectTableName("SELECT * FROM %s");
         ArrayList<UserDTO> userDTOS = new ArrayList<>();
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
-            preparedStatement.setString(1, username);
+//            preparedStatement.setString(1, username);
             ResultSet rs = preparedStatement.executeQuery();
             while(rs.next()) {
                 userDTOS.add(UserDTO.fromModel(rs));

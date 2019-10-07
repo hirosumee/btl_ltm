@@ -40,7 +40,7 @@ public class Server extends ServerSocket {
 
     public void listen() {
         System.out.println(String.format("Server has started on %d.\r\nWaiting for a connection", this.getLocalPort()));
-        while (true) {
+        while (!this.isClosed()) {
             try {
                 Socket client = this.accept();
                 System.out.println("A client is connected");

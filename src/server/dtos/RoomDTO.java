@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class RoomDTO {
     private int id;
-    private String groupIP;
+    private String group_IP;
     private String type;
     private String creator;
     private Date time;
@@ -15,7 +15,7 @@ public class RoomDTO {
     public static RoomDTO fromModel(ResultSet rs) throws SQLException {
         RoomDTO d = new RoomDTO();
         d.id = rs.getInt(1);
-        d.groupIP = rs.getString(2);
+        d.group_IP = rs.getString(2);
         d.type = rs.getString(3).trim();
         d.creator = rs.getString(4).trim();
         d.time = rs.getDate(5);
@@ -32,11 +32,11 @@ public class RoomDTO {
     }
 
     public String getGroupIP() {
-        return groupIP;
+        return group_IP;
     }
 
     public void setGroupIP(String groupIP) {
-        this.groupIP = groupIP;
+        this.group_IP = groupIP;
     }
 
     public String getType() {

@@ -7,9 +7,10 @@ public class RoomCreatePacket implements Packet {
     public static final String type = "room.create";
 
     private String friendUsername;
-
-    public RoomCreatePacket(String friendUsername) {
+    private String roomName;
+    public RoomCreatePacket(String friendUsername, String roomName) {
         this.friendUsername = friendUsername;
+        this.roomName = roomName;
     }
 
     public String getFriendUsername() {
@@ -18,6 +19,14 @@ public class RoomCreatePacket implements Packet {
 
     public void setFriendUsername(String friendUsername) {
         this.friendUsername = friendUsername;
+    }
+
+    public String getRoomName() {
+        return roomName;
+    }
+
+    public void setRoomName(String roomName) {
+        this.roomName = roomName;
     }
 
     @Override

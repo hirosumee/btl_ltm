@@ -9,7 +9,7 @@ import packets.UnAuthPacket;
 public class MustAuthMiddleware implements Middleware {
     @Override
     public boolean execute(Client client, Server server, Packet packet) {
-        client.send(new UnAuthPacket());
+//        client.send(new UnAuthPacket());
         return client.getUser() != null;
     }
 }

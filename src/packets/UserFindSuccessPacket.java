@@ -5,6 +5,8 @@ import mistory.interfaces.Packet;
 import java.util.ArrayList;
 
 public class UserFindSuccessPacket implements Packet {
+
+    static final long serialVersionUID = 1L;
     public static final String type = "user.find.success";
     ArrayList<String> usernames;
 

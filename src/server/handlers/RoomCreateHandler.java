@@ -18,7 +18,8 @@ public class RoomCreateHandler implements ServerHandleable {
         ArrayList<String> members = new ArrayList<>();
         members.add(user.getUsername());
         members.add(packet.getFriendUsername());
-        new RoomDAO().createInbox(user.getUsername(), members);
+        String roomName = packet.getRoomName();
+        new RoomDAO().createInbox(user.getUsername(), members, roomName);
         client.send(new RoomCreateSuccessfulPacket());
     }
 }

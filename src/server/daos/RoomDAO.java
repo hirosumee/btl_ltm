@@ -48,11 +48,11 @@ public class RoomDAO extends DAO {
         List<String> members = new ArrayList<>();
         members.add(creator);
         members.add(creator);
-        return this.createInbox(creator, members);
+        return this.createInbox(creator, members, "Yourself");
     }
 
-    public long createInbox(String creator, List<String> members) {
-        long id = this.create(creator, "inbox");
+    public long createInbox(String creator, List<String> members, String roomName) {
+        long id = this.create(creator, "inbox", roomName);
         createJoin(id, members, creator);
         return id;
     }
@@ -64,8 +64,8 @@ public class RoomDAO extends DAO {
         });
     }
 
-    private long create(String creator, String type) {
-        String SQL = this.injectTableName("INSERT INTO %s (creator, type, time, update_time) VALUES (?, ?, ?, ?)");
+    private long create(String creator, String type, String roomName) {
+        String SQL = this.injectTableName("INSERT INTO %s (creator, type, time, update_time, group_IP) VALUES (?, ?, ?, ?, ?)");
         long id = -1;
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
@@ -74,6 +74,7 @@ public class RoomDAO extends DAO {
             preparedStatement.setString(2, type);
             preparedStatement.setDate(3, new java.sql.Date(date.getTime()));
             preparedStatement.setDate(4, new java.sql.Date(date.getTime()));
+            preparedStatement.setString(5, roomName);
             int affected = preparedStatement.executeUpdate();
             id = this.getCreatedId(affected, preparedStatement);
         } catch (SQLException e) {
