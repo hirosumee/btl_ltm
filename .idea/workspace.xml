@@ -7,28 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8bbaee5-39d3-4608-a39b-7cf5496dbc9e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/server/handlers/GroupCreateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/packets/RoomMemberPacket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/handlers/RoomMemberHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/mistory/Server.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RoomCreatePacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RoomCreatePacket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RoomCreateSuccessfulPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RoomCreateSuccessfulPacket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/packets/RoomPacket.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/packets/RoomPacket.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/ChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/ChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/JoinDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/JoinDAO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/RoomDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/RoomDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/daos/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/daos/UserDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/dtos/RoomDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/dtos/RoomDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomCreateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/RoomCreateHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mistory/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mistory/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/GroupCreatePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/GroupCreatePacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/RoomCreatePacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RoomCreatePacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/RoomCreateSuccessfulPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RoomCreateSuccessfulPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/UserFindPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/UserFindPacket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/packets/UserFindSuccessPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/UserFindSuccessPacket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupCreateHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupCreateHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupInviteHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupInviteHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupKickHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/GroupKickHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageListHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/handlers/MessageListHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/mistory/server/middlewares/MustAuthMiddleware.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/mistory/server/middlewares/MustAuthMiddleware.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/packets/RoomPacket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/packets/RoomPacket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/ChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/ChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/daos/JoinDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/JoinDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/server/daos/RoomDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/RoomDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/daos/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/daos/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/dtos/RoomDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/dtos/RoomDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/handlers/RoomCreateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/RoomCreateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server/middlewares/MustAuthMiddleware.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/middlewares/MustAuthMiddleware.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/GroupCreateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/GroupCreateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/GroupInviteHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/GroupInviteHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/GroupKickHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/GroupKickHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server/handlers/MessageListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/server/handlers/MessageListHandler.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +58,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/mssql-jdbc-7.4.1.jre8.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/exam-n1_7_appchat-master" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -229,6 +233,12 @@
       <workItem from="1570434280529" duration="57000" />
       <workItem from="1570434829128" duration="2077000" />
       <workItem from="1570437891164" duration="4811000" />
+      <workItem from="1570442913066" duration="34000" />
+      <workItem from="1570586637947" duration="101000" />
+      <workItem from="1570587734485" duration="2611000" />
+      <workItem from="1570752419474" duration="1124000" />
+      <workItem from="1570929419804" duration="3172000" />
+      <workItem from="1570933234691" duration="1962000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1569820462923</created>
@@ -265,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570371511787</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1570442931113</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570442931113</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,16 +304,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/server/handlers/MessageListHandler.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

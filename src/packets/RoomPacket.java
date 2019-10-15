@@ -18,7 +18,10 @@ public class RoomPacket implements Packet {
 
     @Override
     public String getType() {
-        return null;
+        return type;
+    }
+    public String getRoomType() {
+        return this.type;
     }
 
     public static long getSerialVersionUID() {

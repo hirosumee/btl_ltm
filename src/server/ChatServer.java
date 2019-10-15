@@ -43,6 +43,7 @@ public class ChatServer {
         server.registerHandler(GroupInvitePacket.type, new GroupInviteHandler());
         server.registerHandler(GroupKickPacket.type, new GroupKickHandler());
         server.registerHandler(UserFindPacket.type, new UserFindHandler());
+        server.registerHandler(RoomMemberPacket.type, new RoomMemberHandler());
         server.listen();
     }
 

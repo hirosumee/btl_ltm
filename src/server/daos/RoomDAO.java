@@ -57,6 +57,14 @@ public class RoomDAO extends DAO {
         return id;
     }
 
+    public long createGroup(String creator, String roomName) {
+        ArrayList<String> members = new ArrayList<>();
+        members.add(creator);
+        long id = this.create(creator, "group", roomName);
+        createJoin(id, members, creator);
+        return id;
+    }
+
     private void createJoin(long roomId, List<String> members, String creator) {
         JoinDAO joinDAO = new JoinDAO();
         members.forEach(mem -> {
@@ -65,7 +73,10 @@ public class RoomDAO extends DAO {
     }
 
     private long create(String creator, String type, String roomName) {
-        String SQL = this.injectTableName("INSERT INTO %s (creator, type, time, update_time, group_IP) VALUES (?, ?, ?, ?, ?)");
+        String
+                SQL =
+                this.injectTableName(
+                        "INSERT INTO %s (creator, type, time, update_time, group_IP) VALUES (?, ?, ?, ?, ?)");
         long id = -1;
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL, Statement.RETURN_GENERATED_KEYS);
@@ -82,5 +93,14 @@ public class RoomDAO extends DAO {
         }
 
         return id;
+    }
+
+    public boolean isGroup(int roomId) {
+        try {
+            RoomDTO room = this.getFromId(roomId);
+            return room.getType().equals("group");
+        } catch (RecordNotFoundException e) {
+            return false;
+        }
     }
 }

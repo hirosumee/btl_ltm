@@ -30,9 +30,6 @@ public class MessageListHandler implements ServerHandleable {
             return ms;
         }).collect(Collectors.toList());
         MessageLoadSuccessPacket pk = new MessageLoadSuccessPacket((ArrayList) mp);
-        System.out.println(pk.getMessages().size());
-        System.out.println("dm");
-        System.out.println(pk);
         client.send(pk);
     }
 }
